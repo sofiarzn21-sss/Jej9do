@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 .eyebrow, .project-type { color: #0F2854; font-size: .67em; font-weight: 700; letter-spacing: .18em; }
 .intro h1 { font-size: clamp(2.7em, 5vw, 4.7em); line-height: 1.08; font-weight: 700; margin-bottom: .5em; }
 .intro h1 span { color: #0F2854; }
-.intro-copy { max-width: 650px; color: var(--muted); font-size: 1.05em; line-height: 1.9; }
+.intro-copy { max-width: 100%; color: var(--muted); font-size: 1.07em; line-height: 2.05; letter-spacing: .012em; text-align: justify; text-wrap: pretty; }
 .intro-copy strong { color: var(--navy); }
 .text-link { display: inline-block; margin-top: .8em; padding-bottom: .45em; border-bottom: 1px solid #aaa8cf; font-size: .88em; font-weight: 600; }
 .text-link span { margin-left: .5em; color: #0F2854; }
