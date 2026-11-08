@@ -1,12 +1,12 @@
 /* jej9do portfolio overrides — white canvas, deep navy typography */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-:root { --navy: #030164; --muted: #5e5d82; --line: #e8e8f0; --paper: #ffffff; }
+:root { --navy: #0F2854; --muted: #0F2854; --line: #e8e8f0; --paper: #ffffff; }
 html { scroll-behavior: smooth; }
 body, input, select, textarea { background: #fff; color: var(--navy); font-family: 'DM Sans', sans-serif; }
 body { background: #fff !important; }
-a { color: var(--navy); border-bottom-color: rgba(3,1,100,.25); }
-a:hover { color: #5552a3 !important; }
+a { color: var(--navy); border-bottom-color: rgba(15,40,84,.25); }
+a:hover { color: #0F2854 !important; }
 strong, b, h1, h2, h3, h4, h5, h6 { color: var(--navy); }
 h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sans-serif; letter-spacing: -.045em; }
 #header {
@@ -15,21 +15,21 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 }
 #header .inner { display: flex; flex-direction: column; align-items: flex-start; }
 #header .wordmark { font-size: 2.25em; font-weight: 800; line-height: 1; text-decoration: none; border: 0; color: var(--navy); }
-#header .wordmark span, .footer-wordmark span { color: #8583bd; }
+#header .wordmark span, .footer-wordmark span { color: #0F2854; }
 #header .tagline { margin: 2em 0 1em; color: var(--muted); font-size: 1em; line-height: 1.7; }
-#header .header-footnote { margin-top: 3em; font-size: .65em; letter-spacing: .16em; color: #9291ad; }
+#header .header-footnote { margin-top: 3em; font-size: .65em; letter-spacing: .16em; color: #0F2854; }
 .site-nav { display: flex; flex-direction: column; gap: .8em; margin-top: 1.6em; }
 .site-nav a { border: 0; color: var(--navy); font-size: .78em; letter-spacing: .12em; text-transform: uppercase; }
 #main { background: #fff; }
 #main > section { border-top: 1px solid var(--line); }
 #main > section:first-child { border-top: 0; }
-.eyebrow, .project-type { color: #7775b0; font-size: .67em; font-weight: 700; letter-spacing: .18em; }
+.eyebrow, .project-type { color: #0F2854; font-size: .67em; font-weight: 700; letter-spacing: .18em; }
 .intro h1 { font-size: clamp(2.7em, 5vw, 4.7em); line-height: 1.08; font-weight: 700; margin-bottom: .5em; }
-.intro h1 span { color: #7775b0; }
+.intro h1 span { color: #0F2854; }
 .intro-copy { max-width: 650px; color: var(--muted); font-size: 1.05em; line-height: 1.9; }
 .intro-copy strong { color: var(--navy); }
 .text-link { display: inline-block; margin-top: .8em; padding-bottom: .45em; border-bottom: 1px solid #aaa8cf; font-size: .88em; font-weight: 600; }
-.text-link span { margin-left: .5em; color: #7775b0; }
+.text-link span { margin-left: .5em; color: #0F2854; }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 2em; margin-bottom: 2.5em; }
 .section-head h2, #contact h2 { font-size: clamp(2em, 3.5vw, 3em); line-height: 1.12; margin: 0; }
 .section-note { color: var(--muted); font-size: .85em; line-height: 1.7; margin: 0; }
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 .video-frame img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease, opacity .45s ease; }
 .video-frame:hover img { transform: scale(1.035); opacity: .82; }
 .play-mark { position: absolute; right: 1em; bottom: 1em; width: 2.6em; height: 2.6em; border-radius: 50%; display: grid; place-items: center; background: #fff; color: var(--navy); font-size: .9em; }
-.coming-soon { position: absolute; left: 1em; bottom: 1.55em; color: #fff; font-size: .58em; font-weight: 700; letter-spacing: .12em; text-shadow: 0 1px 5px rgba(0,0,0,.6); }
+.coming-soon { position: absolute; left: 1em; bottom: 1.55em; color: #0F2854; font-size: .58em; font-weight: 700; letter-spacing: .12em; text-shadow: 0 1px 5px rgba(0,0,0,.6); }
 .work-item .project-type { margin: 1.35em 0 .5em; font-size: .62em; }
 .work-item h3 { font-size: 1.25em; font-weight: 700; margin: 0 0 .35em; }
 .work-item p:not(.project-type) { color: var(--muted); font-size: .85em; line-height: 1.7; margin: 0; }
