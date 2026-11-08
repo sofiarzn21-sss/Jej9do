@@ -176,7 +176,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   position: fixed;
   z-index: -1;
   inset: -8px 35% -8px 0;
-  background: url("../images/bg-texture.webp") center center / cover no-repeat;
+  background: url("https://drive.google.com/uc?export=view&id=16f5tD4t2MNSceOXqDGJe_rvLom9ggA9y") center center / cover no-repeat;
   opacity: .8;
   pointer-events: none;
 }
