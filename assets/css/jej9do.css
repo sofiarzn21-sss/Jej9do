@@ -1,5 +1,5 @@
 /* jej9do portfolio overrides — white canvas, deep navy typography */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+/* Use the system Helvetica typeface throughout the portfolio. */
 
 :root { --navy: #0F2854; --muted: #0F2854; --line: #e8e8f0; --paper: #ffffff; }
 html { scroll-behavior: smooth; }
@@ -158,3 +158,8 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 /* Compact software note beside project heading */
 .section-head .section-note { font-size: .72em; line-height: 1.55; max-width: 25em; }
 .section-head .section-note p { margin: 0 0 .45em; }
+
+/* Site-wide Helvetica Regular typography */
+html, body, body :not(i):not([class*="fa-"]) {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
