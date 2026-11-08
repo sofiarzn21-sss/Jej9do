@@ -203,7 +203,10 @@ html, body, body :not(i):not([class*="fa-"]) {
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: url("../images/bg-texture.webp") center center / cover no-repeat;
+  background-image: url("https://drive.google.com/uc?export=download&id=16f5tD4t2MNSceOXqDGJe_rvLom9ggA9y");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: .8;
   pointer-events: none;
 }
