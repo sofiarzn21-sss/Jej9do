@@ -1,0 +1,27 @@
+jej9do — Video Portfolio
+=======================
+
+This is your customized HTML5 UP Strata starter site.
+
+QUICK CUSTOMIZATION
+1. Open index.html in a code editor (Visual Studio Code is recommended).
+2. Replace the six sample project titles and descriptions in the Selected work section.
+3. Replace each YOUR_VIDEO_ID_01 ... YOUR_VIDEO_ID_06 in the YouTube links with your actual video IDs.
+   For Vimeo, replace each href with your Vimeo video URL.
+4. Replace images/thumbs/01.jpg through 06.jpg with still frames from your own videos.
+   Keep the same filenames and use JPG images for easiest replacement.
+5. Replace YOUR_EMAIL@example.com with your real contact email address.
+6. Replace images/avatar.jpg if you later decide to add a profile portrait (the current layout uses a wordmark).
+7. The overall look is controlled by assets/css/custom.css. The font is DM Sans + Manrope (loaded from Google Fonts).
+
+PREVIEW
+- Extract the folder.
+- Open index.html in a browser, or use the Live Server extension in VS Code.
+- An internet connection is needed for Google Fonts and external YouTube/Vimeo links.
+
+VIDEO LINKS
+The six video links are intentionally placeholders. They will not play until you replace the example IDs with your own video URLs.
+
+LICENSE
+The original Strata template is by HTML5 UP and retains its Creative Commons Attribution 3.0 license.
+See LICENSE.txt and https://html5up.net/license.
