@@ -187,3 +187,30 @@ html, body, body :not(i):not([class*="fa-"]) {
 @media screen and (max-width: 980px) {
   #main::before { inset: -8px; }
 }
+
+
+/* Place the paper texture behind the right-side menu panel */
+#main { background: #fff !important; }
+#main::before { content: none !important; display: none !important; }
+#header {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+  overflow: hidden;
+}
+#header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url("../images/bg-texture.webp") center center / cover no-repeat;
+  opacity: .8;
+  pointer-events: none;
+}
+#header .inner { position: relative; z-index: 1; }
+@media screen and (min-width: 981px) {
+  #header { position: fixed !important; }
+}
+@media screen and (max-width: 980px) {
+  #header { position: relative !important; }
+}
