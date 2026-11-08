@@ -116,3 +116,20 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
   #header { position: relative !important; width: 100% !important; height: auto !important; }
   #main, #footer { width: 100% !important; margin: 0 !important; }
 }
+
+/* Contact buttons */
+
+.contact-links { display: flex; flex-wrap: wrap; gap: .85em; margin-top: 1.8em; }
+.contact-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 8.5em; padding: .9em 1.35em;
+  border: 1px solid var(--navy); border-radius: 2px;
+  color: var(--navy) !important; background: #fff;
+  font-size: .72em; font-weight: 700; letter-spacing: .12em;
+  line-height: 1.2; text-decoration: none; text-transform: uppercase;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.contact-button:hover {
+  background: var(--navy); color: #fff !important;
+  border-color: var(--navy); transform: translateY(-2px);
+}
