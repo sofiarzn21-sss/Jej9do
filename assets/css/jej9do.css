@@ -163,3 +163,28 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 html, body, body :not(i):not([class*="fa-"]) {
   font-family: Helvetica, Arial, sans-serif !important;
 }
+
+
+/* Soft blue paper texture behind the left content column */
+#main {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+#main::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: -8px 35% -8px 0;
+  background: url("../images/bg-texture.webp") center center / cover no-repeat;
+  opacity: .8;
+  filter: blur(7px);
+  pointer-events: none;
+}
+#main > section {
+  position: relative;
+  background: transparent !important;
+}
+@media screen and (max-width: 980px) {
+  #main::before { inset: -8px; }
+}
