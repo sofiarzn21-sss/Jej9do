@@ -178,7 +178,6 @@ html, body, body :not(i):not([class*="fa-"]) {
   inset: -8px 35% -8px 0;
   background: url("../images/bg-texture.webp") center center / cover no-repeat;
   opacity: .8;
-  filter: blur(7px);
   pointer-events: none;
 }
 #main > section {
