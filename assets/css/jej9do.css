@@ -150,3 +150,7 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
   background: var(--navy); color: #fff !important;
   border-color: var(--navy); transform: translateY(-2px);
 }
+
+/* Navigation accent */
+.site-nav a, #header .header-footnote { color: #4988C4 !important; }
+.site-nav a:hover { color: #0F2854 !important; }
