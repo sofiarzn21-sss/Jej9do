@@ -154,3 +154,7 @@ h1, h2, h3, h4, h5, h6, .wordmark, .footer-wordmark { font-family: 'Manrope', sa
 /* Navigation accent */
 .site-nav a, #header .header-footnote { color: #4988C4 !important; }
 .site-nav a:hover { color: #0F2854 !important; }
+
+/* Compact software note beside project heading */
+.section-head .section-note { font-size: .72em; line-height: 1.55; max-width: 25em; }
+.section-head .section-note p { margin: 0 0 .45em; }
