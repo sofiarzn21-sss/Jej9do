@@ -217,3 +217,188 @@ html, body, body :not(i):not([class*="fa-"]) {
 @media screen and (max-width: 980px) {
   #header { position: relative !important; }
 }
+
+
+/* Responsive layout: tablets and phones */
+@media screen and (min-width: 737px) and (max-width: 980px) {
+  #header {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 3.25em 3em !important;
+    text-align: left !important;
+  }
+  #header .inner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: flex-start !important;
+  }
+  #header .wordmark { font-size: 2em; }
+  #header .tagline {
+    max-width: 42em;
+    margin: 1em 0 .75em !important;
+    font-size: .95em;
+    line-height: 1.6;
+  }
+  .site-nav {
+    justify-content: flex-start !important;
+    gap: 1.5em;
+    margin-top: .75em !important;
+  }
+  #main {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 4em 3em !important;
+  }
+  #footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2.5em 3em !important;
+  }
+  .section-head {
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+  .section-head .section-note {
+    max-width: 22em;
+    font-size: .7em;
+  }
+  .video-grid { display: flex; flex-wrap: wrap; }
+  .video-grid > .work-item,
+  .video-grid > .featured-work {
+    width: 50% !important;
+  }
+  .video-frame.video-embed { max-height: none; }
+}
+
+@media screen and (max-width: 736px) {
+  html { scroll-padding-top: 1em; }
+  body { overflow-x: hidden; }
+  #header {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 2.25em 1.35em 2em !important;
+    text-align: center !important;
+  }
+  #header .inner {
+    width: 100%;
+    max-width: 34em;
+    margin: 0 auto;
+    align-items: center !important;
+  }
+  #header .wordmark { font-size: 1.9em; }
+  #header .tagline {
+    max-width: 31em;
+    margin: 1em auto .8em !important;
+    font-size: .9em;
+    line-height: 1.6;
+  }
+  .site-nav {
+    width: 100%;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center;
+    gap: .65em 1.15em;
+    margin: .75em 0 0 !important;
+  }
+  .site-nav a {
+    font-size: .7em;
+    letter-spacing: .09em;
+    padding: .35em 0;
+  }
+  #main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 2.6em 1.25em 2em !important;
+  }
+  #main > section {
+    padding: 2.6em 0 !important;
+  }
+  #main > section:first-child { padding-top: .5em !important; }
+  .intro h1 {
+    font-size: clamp(2.15em, 9vw, 3.35em) !important;
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+  .intro-copy {
+    font-size: .96em;
+    line-height: 1.8;
+    text-align: left;
+  }
+  .section-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .9em;
+    margin-bottom: 1.8em;
+  }
+  .section-head h2, #contact h2 {
+    font-size: clamp(1.9em, 8vw, 2.6em) !important;
+    line-height: 1.12;
+  }
+  .section-head .section-note {
+    max-width: 100%;
+    margin: 0 !important;
+    font-size: .76em !important;
+    line-height: 1.6;
+  }
+  .section-head .section-note p { margin-bottom: .45em; }
+  .video-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .video-grid > .work-item,
+  .video-grid > .featured-work,
+  .video-grid > [class*="col-"] {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .work-item { margin-bottom: 2.2em !important; }
+  .video-frame.video-embed {
+    width: 100%;
+    max-height: none;
+    aspect-ratio: 16 / 9;
+  }
+  .work-item h3 { font-size: 1.15em; }
+  .work-item p:not(.project-type) { font-size: .84em; }
+  .portfolio-note { margin-top: .5em; }
+  #contact h2 { overflow-wrap: anywhere; }
+  .contact-links {
+    gap: .7em;
+    margin-top: 1.4em;
+  }
+  .contact-button {
+    width: 3.1em;
+    height: 3.1em;
+  }
+  #footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2em 1.25em !important;
+  }
+  #footer .inner { text-align: center; }
+  #header::before { background-position: center center; }
+}
+
+@media screen and (max-width: 380px) {
+  #header { padding-left: 1em !important; padding-right: 1em !important; }
+  #main { padding-left: 1em !important; padding-right: 1em !important; }
+  .intro h1 { font-size: 2.05em !important; }
+  .site-nav { gap: .5em .85em; }
+  .site-nav a { font-size: .65em; }
+  .contact-button { width: 2.85em; height: 2.85em; }
+}
