@@ -402,3 +402,22 @@ html, body, body :not(i):not([class*="fa-"]) {
   .site-nav a { font-size: .65em; }
   .contact-button { width: 2.85em; height: 2.85em; }
 }
+
+
+/* Center the intro copy on mobile screens */
+@media screen and (max-width: 736px) {
+  #about,
+  #about .eyebrow,
+  #about h1,
+  #about .intro-copy {
+    text-align: center !important;
+  }
+  #about h1 br { display: block !important; }
+  #about h1 span { display: block; }
+  #about .intro-copy {
+    max-width: 34em;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: pretty;
+  }
+}
