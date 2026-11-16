@@ -662,3 +662,66 @@ html, body, body :not(i):not([class*="fa-"]) {
 @media screen and (max-width: 736px) {
   #header .wordmark { font-size: 2.35em !important; }
 }
+
+
+/* Consistent horizontal alignment for My projects and Software on every screen */
+.project-topline {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1em !important;
+  width: 100% !important;
+}
+.project-topline .project-heading {
+  flex: 0 1 46% !important;
+  min-width: 0;
+}
+.project-topline .project-heading h2 {
+  margin: 0 !important;
+  white-space: nowrap;
+  line-height: 1 !important;
+}
+.project-topline .project-software {
+  flex: 1 1 54% !important;
+  min-width: 0;
+  align-self: center !important;
+  margin: 0 !important;
+  text-align: right !important;
+  line-height: 1.35 !important;
+}
+.project-topline .project-software p {
+  margin: 0 !important;
+}
+@media screen and (max-width: 736px) {
+  .project-topline {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: .65em !important;
+    margin-bottom: 1.5em !important;
+  }
+  .project-topline .project-heading {
+    flex: 0 0 auto !important;
+  }
+  .project-topline .project-heading h2 {
+    font-size: clamp(1.15em, 5.4vw, 1.65em) !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+  }
+  .project-topline .project-software {
+    flex: 1 1 auto !important;
+    font-size: clamp(.56em, 2.4vw, .68em) !important;
+    line-height: 1.35 !important;
+    text-align: right !important;
+    align-self: center !important;
+  }
+  .project-topline .project-software p {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .project-topline { gap: .45em !important; }
+  .project-topline .project-heading h2 { font-size: 1.08em !important; }
+  .project-topline .project-software { font-size: .54em !important; }
+}
