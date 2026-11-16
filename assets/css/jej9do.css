@@ -771,3 +771,30 @@ html, body, body :not(i):not([class*="fa-"]) {
     margin-top: 0 !important;
   }
 }
+
+
+/* Mobile welcome label at the very top of the page */
+.mobile-welcome {
+  display: none;
+}
+@media screen and (max-width: 736px) {
+  #header .mobile-welcome {
+    display: block !important;
+    align-self: center !important;
+    margin: 0 0 1.1em !important;
+    text-align: center !important;
+  }
+
+  /* A clear but compact gap between the About copy and My projects */
+  #main > #about {
+    padding-bottom: .35em !important;
+    margin-bottom: 0 !important;
+  }
+  #about .intro-copy {
+    margin-bottom: 2em !important;
+  }
+  #main > #work {
+    margin-top: 0 !important;
+    padding-top: .6em !important;
+  }
+}
