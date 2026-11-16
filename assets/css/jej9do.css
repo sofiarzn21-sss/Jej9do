@@ -725,3 +725,19 @@ html, body, body :not(i):not([class*="fa-"]) {
   .project-topline .project-heading h2 { font-size: 1.08em !important; }
   .project-topline .project-software { font-size: .54em !important; }
 }
+
+
+/* Reduce the empty space between the About text and My projects on phones */
+@media screen and (max-width: 736px) {
+  #main > #about {
+    margin-bottom: 0 !important;
+    padding-bottom: .6em !important;
+  }
+  #about .intro-copy {
+    margin-bottom: 0 !important;
+  }
+  #main > #work {
+    margin-top: 0 !important;
+    padding-top: .75em !important;
+  }
+}
