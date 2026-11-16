@@ -506,3 +506,83 @@ html, body, body :not(i):not([class*="fa-"]) {
     aspect-ratio: 16 / 9;
   }
 }
+
+
+/* Rebuilt project section layout — heading on top, two video columns */
+.project-heading {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 1.15em !important;
+}
+.project-heading h2 {
+  margin: 0 !important;
+  font-size: clamp(2em, 3.5vw, 3em);
+  line-height: 1.12;
+}
+.project-software {
+  display: block;
+  width: 100%;
+  max-width: none !important;
+  margin: 0 0 2em !important;
+  font-size: .76em;
+  line-height: 1.6;
+}
+.project-software p {
+  margin: 0 0 .35em !important;
+}
+.video-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: start;
+  column-gap: 1.5em !important;
+  row-gap: 2.4em !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+.video-grid > .work-item,
+.video-grid > .featured-work,
+.video-grid > [class*="col-"] {
+  display: block !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+.video-grid .video-frame.video-embed {
+  width: 100% !important;
+  max-height: none !important;
+  aspect-ratio: 16 / 9;
+}
+@media screen and (max-width: 736px) {
+  .project-heading h2 { font-size: clamp(1.9em, 8vw, 2.6em) !important; }
+  .project-software {
+    margin-bottom: 1.5em !important;
+    font-size: .72em;
+  }
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: .9em !important;
+    row-gap: 1.8em !important;
+  }
+  .video-grid .work-item .project-type {
+    font-size: .55em;
+    letter-spacing: .1em;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .video-grid .work-item h3 {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  .video-grid .work-item p:not(.project-type) {
+    font-size: .76em;
+    line-height: 1.5;
+  }
+}
