@@ -176,7 +176,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   position: fixed;
   z-index: -1;
   inset: -8px 35% -8px 0;
-  background: url("https://drive.google.com/thumbnail?id=16f5tD4t2MNSceOXqDGJe_rvLom9ggA9y&sz=w2000") center center / cover no-repeat;
+  background: url("") center center / cover no-repeat;
   opacity: .8;
   pointer-events: none;
 }
@@ -203,7 +203,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   position: absolute;
   z-index: 0;
   inset: 0;
-  background-image: url("https://drive.google.com/uc?export=download&id=16f5tD4t2MNSceOXqDGJe_rvLom9ggA9y");
+  background-image: url("");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -375,7 +375,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   }
   .work-item h3 { font-size: 1.15em; }
   .work-item p:not(.project-type) { font-size: .84em; }
-  .portfolio-note { margin-top: .5em; }
+  .portfolio-note { margin-top: 2em; }
   #contact h2 { overflow-wrap: anywhere; }
   .contact-links {
     gap: .7em;
@@ -512,12 +512,12 @@ html, body, body :not(i):not([class*="fa-"]) {
 .project-heading {
   display: block !important;
   width: 100%;
-  margin: 0 0 1.15em !important;
+  margin: 0 0 1.05em !important;
 }
 .project-heading h2 {
   margin: 0 !important;
   font-size: clamp(2em, 3.5vw, 3em);
-  line-height: 1.12;
+  line-height: 1;
 }
 .project-software {
   display: block;
@@ -525,7 +525,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   max-width: none !important;
   margin: 0 0 2em !important;
   font-size: .76em;
-  line-height: 1.6;
+  line-height: 1;
 }
 .project-software p {
   margin: 0 0 .35em !important;
@@ -563,7 +563,7 @@ html, body, body :not(i):not([class*="fa-"]) {
 @media screen and (max-width: 736px) {
   .project-heading h2 { font-size: clamp(1.9em, 8vw, 2.6em) !important; }
   .project-software {
-    margin-bottom: 1.5em !important;
+    margin-bottom: 1.6em !important;
     font-size: .72em;
   }
   .video-grid {
@@ -593,7 +593,7 @@ html, body, body :not(i):not([class*="fa-"]) {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   align-items: start;
-  column-gap: 2em;
+  column-gap: 1em;
   width: 100%;
   margin: 0 0 2em !important;
 }
@@ -622,12 +622,12 @@ html, body, body :not(i):not([class*="fa-"]) {
   }
   .project-topline .project-heading h2 {
     font-size: clamp(1.25em, 5.8vw, 1.8em) !important;
-    line-height: 1.15;
+    line-height: 1;
     overflow-wrap: normal;
   }
   .project-topline .project-software {
     font-size: .62em !important;
-    line-height: 1.45;
+    line-height: 1;
     text-align: right;
   }
 }
