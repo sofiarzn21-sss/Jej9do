@@ -798,3 +798,39 @@ html, body, body :not(i):not([class*="fa-"]) {
     padding-top: .6em !important;
   }
 }
+
+
+/* Final correction: one blank paragraph after About; welcome label per device */
+.mobile-welcome { display: none !important; }
+.desktop-welcome { display: block !important; }
+.intro-spacer {
+  display: block !important;
+  height: 1.5em !important;
+  min-height: 1.5em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5em !important;
+}
+@media screen and (max-width: 736px) {
+  #header .mobile-welcome {
+    display: block !important;
+  }
+  #about .desktop-welcome {
+    display: none !important;
+  }
+  #main > #about {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #about .intro-copy {
+    margin-bottom: 0 !important;
+  }
+  #about .intro-spacer {
+    height: 1.5em !important;
+    min-height: 1.5em !important;
+  }
+  #main > #work {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
