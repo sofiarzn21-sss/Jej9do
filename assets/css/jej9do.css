@@ -834,3 +834,27 @@ html, body, body :not(i):not([class*="fa-"]) {
     padding-top: 0 !important;
   }
 }
+
+
+/* Final spacing refinement: no About spacer on desktop, breathing room on mobile */
+@media screen and (min-width: 737px) {
+  #about .intro-spacer {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  #about .intro-spacer {
+    display: block !important;
+    height: 1.5em !important;
+    min-height: 1.5em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Space between the divider and the My projects / Software row */
+  #main > #work {
+    padding-top: 1.15em !important;
+    margin-top: 0 !important;
+  }
+}
