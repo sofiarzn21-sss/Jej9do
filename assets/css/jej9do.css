@@ -756,3 +756,18 @@ html, body, body :not(i):not([class*="fa-"]) {
     padding-top: .35em !important;
   }
 }
+
+
+/* Small breathing space between the About paragraph and My projects */
+@media screen and (max-width: 736px) {
+  #main > #about {
+    padding-bottom: .25em !important;
+  }
+  #about .intro-copy {
+    margin-bottom: 0 !important;
+  }
+  #main > #work {
+    padding-top: 1.1em !important;
+    margin-top: 0 !important;
+  }
+}
