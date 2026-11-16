@@ -858,3 +858,17 @@ html, body, body :not(i):not([class*="fa-"]) {
     margin-top: 0 !important;
   }
 }
+
+
+/* Bring the About headline closer to the mobile navigation */
+@media screen and (max-width: 736px) {
+  #header {
+    padding-bottom: .45em !important;
+  }
+  #main {
+    padding-top: .55em !important;
+  }
+  #main > #about {
+    padding-top: .35em !important;
+  }
+}
