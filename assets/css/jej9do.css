@@ -741,3 +741,18 @@ html, body, body :not(i):not([class*="fa-"]) {
     padding-top: .75em !important;
   }
 }
+
+
+/* Fine-tune mobile gap between About and My projects */
+@media screen and (max-width: 736px) {
+  #main > #about {
+    padding-bottom: .35em !important;
+  }
+  #about .intro-copy {
+    margin-bottom: .7em !important;
+  }
+  #main > #work {
+    margin-top: 0 !important;
+    padding-top: .35em !important;
+  }
+}
