@@ -586,3 +586,53 @@ html, body, body :not(i):not([class*="fa-"]) {
     line-height: 1.5;
   }
 }
+
+
+/* Keep My projects and Software on the same top row */
+.project-topline {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: start;
+  column-gap: 2em;
+  width: 100%;
+  margin: 0 0 2em !important;
+}
+.project-topline .project-heading {
+  width: auto !important;
+  margin: 0 !important;
+}
+.project-topline .project-software {
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  text-align: right;
+}
+.project-topline .project-heading h2 {
+  margin: 0 !important;
+}
+.project-topline .project-software p {
+  margin: 0 0 .35em !important;
+}
+@media screen and (max-width: 736px) {
+  .project-topline {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    column-gap: .75em;
+    align-items: start;
+    margin-bottom: 1.5em !important;
+  }
+  .project-topline .project-heading h2 {
+    font-size: clamp(1.25em, 5.8vw, 1.8em) !important;
+    line-height: 1.15;
+    overflow-wrap: normal;
+  }
+  .project-topline .project-software {
+    font-size: .62em !important;
+    line-height: 1.45;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 360px) {
+  .project-topline { column-gap: .5em; }
+  .project-topline .project-heading h2 { font-size: 1.2em !important; }
+  .project-topline .project-software { font-size: .58em !important; }
+}
