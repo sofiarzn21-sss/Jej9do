@@ -872,3 +872,31 @@ html, body, body :not(i):not([class*="fa-"]) {
     padding-top: .35em !important;
   }
 }
+
+
+/* Mobile only: show one large video per row */
+@media screen and (max-width: 736px) {
+  .video-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    column-gap: 0 !important;
+    row-gap: 2.2em !important;
+    width: 100% !important;
+  }
+  .video-grid > .work-item,
+  .video-grid > .featured-work,
+  .video-grid > [class*="col-"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .video-grid .video-frame.video-embed {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+}
