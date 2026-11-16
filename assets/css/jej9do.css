@@ -636,3 +636,15 @@ html, body, body :not(i):not([class*="fa-"]) {
   .project-topline .project-heading h2 { font-size: 1.2em !important; }
   .project-topline .project-software { font-size: .58em !important; }
 }
+
+
+/* Center the closing portfolio note with equal vertical spacing */
+#main > #work {
+  padding-bottom: 0 !important;
+}
+#work .portfolio-note {
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  margin: 2.25em 0 !important;
+}
