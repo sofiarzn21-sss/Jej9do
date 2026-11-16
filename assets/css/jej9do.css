@@ -421,3 +421,12 @@ html, body, body :not(i):not([class*="fa-"]) {
     text-wrap: pretty;
   }
 }
+
+
+/* Make main navigation links bolder */
+.site-nav a {
+  font-weight: 700 !important;
+}
+@media screen and (max-width: 736px) {
+  .site-nav a { font-weight: 700 !important; }
+}
